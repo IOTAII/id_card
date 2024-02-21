@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "serve": "^14.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

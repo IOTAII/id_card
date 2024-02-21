@@ -1,0 +1,48 @@
+.custom-button,
+.cta--is-1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 12px 120px; /* Adjust padding as needed */
+}
+
+.custom-button::after,
+.cta--is-1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Set width to 0 initially */
+  height: 100%;
+  background-color: #6dd58c;
+  border-radius: 10px;
+  transition: width 0.3s ease-in; /* Use width for the transition */
+}
+
+.custom-button:hover::after,
+.cta--is-1:hover::after {
+  width: 100%; /* Expand width on hover */
+}
+
+.custom-button span,
+.cta--is-1 span {
+  position: relative;
+  z-index: 1;
+}
+
+.cta--is-1 {
+  background-color: #073042;
+  color: #fff;
+  min-width: 120px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.custom-button:hover span,
+.cta--is-1:hover span {
+  color: #000; /* Change text color to black on hover */
+}
